@@ -11,7 +11,7 @@ Dado um número de conta n, exiba o número de conta completo correspondente.
 */
 import java.util.Scanner;
 
-public class ContaBancaria{
+public class NumeroContaBancaria{
    public static void main(String[] args){
       
       System.out.print("Digite o numero da conta corrente: ");

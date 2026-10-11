@@ -23,7 +23,7 @@ public class Data {
          mes = m;
       else{
          mes = 1;
-         System.out.println("\nMes " + m + " inválido.\nConfigurado mes = 1.\n");
+         System.out.printf("\nMes %d invalido\nConfigurado mes = 1.\n\n", m);
       }
       ano = a;
       dia = checkDia(d);
@@ -35,7 +35,7 @@ public class Data {
          diasMes[2] = 29;      
       if(diaTeste > 0 && diaTeste <= diasMes[mes])
          return diaTeste;
-      System.out.println("\nDia " + diaTeste + " Invalido.\nConfigurado dia = 1.\n");
+      System.out.printf("\nDia %d invalido\nConfigurado dia = 1.\n\n", diaTeste);
       return 1;
    }
    

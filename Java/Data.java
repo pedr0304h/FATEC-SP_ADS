@@ -52,9 +52,7 @@ public class Data {
    } 
    
    private boolean bissexto(int anoTeste){
-      if ((anoTeste % 4 == 0 && anoTeste % 100 != 0) || (anoTeste % 400 == 0))
-         return true;
-      return false;
+      return (anoTeste % 4 == 0 && anoTeste % 100 != 0) || (anoTeste % 400 == 0);
    } 
 
    public String toString(){

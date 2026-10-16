@@ -5,8 +5,9 @@ public class ContaCorrente{
    private int numConta;
    private String titular;
    private double saldo;
+   private double limite;
    
-   public ContaCorrente(int n, String t, double s){
+   public ContaCorrente(int n, String t, double s, double l){
       setTitular(t);
       if(n < 0)
          System.out.println("\nNumero da conta invalido!");
@@ -16,8 +17,20 @@ public class ContaCorrente{
          System.out.println("\nSaldo inicial invalido!");
       else
          saldo = s;
+      if(l < 0)
+         System.out.println("\nLimite invalido!");
+      else
+         limite = l;
    }
-         
+
+   public ContaCorrente(int n, String t, double s){
+      this(n, t, s, 1000);
+   }
+
+    public ContaCorrente(int n, String t){
+      this(n, t, 0, 0);    
+   }
+   
    public void setTitular(String str){
       titular = str;
    }

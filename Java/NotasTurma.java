@@ -48,7 +48,7 @@ public class NotasTurma {
 		   
 			mediaAluno = media / PROVAS;
 			
-         if(mediaAluno > mediaTurma)
+			if(mediaAluno > mediaTurma)
 				System.out.printf(" - Média %2.1f - Acima da média", mediaAluno);
 			else if(mediaAluno < mediaTurma)
 				System.out.printf(" - Média %2.1f - Abaixo da média", mediaAluno);
